@@ -1,0 +1,2 @@
+# Bot-com-Python-criar-e-salvar-arquivo-no-bloco-de-notas-com-entrada-de-testo-pelo-usu-rio
+Este é um script Python de automação que utiliza as biblioteca PyAutoGui e PyPerClip para abrir o bloco de notas do windows, solicitar um texto do usuário e nome do arquivo, após fazer o salvamento e fechar o bloco de notas. É um script simples, mas que serve como paradigma para automatizar uma infinidade de tarefas cotidianas semelhantes.
