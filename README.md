@@ -37,8 +37,10 @@ pyautogui.hotkey("ctrl", "s")
 pyperclip.copy(pyautogui.prompt())
 pyautogui.hotkey("ctrl", "v")
 
-# clica no botão salvar
+# navegar até o botão salvar
 pyautogui.press(['tab','tab','tab','tab'])
+
+# clica no botão salvar
 pyautogui.press('enter')
 
 # fecha o bloco de notas
