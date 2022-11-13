@@ -1,7 +1,7 @@
 # Bot com Python 
 ## Automação com interação com o suário
 
-Veja o vídeo: [no Youtube](https://pages.github.com/)
+[Veja o vídeo no Youtube](https://youtu.be/5dAzXyfbBgU)
 
 ### Função: abre o bloco de notas do windows, solicita do usuário o texto e o nome do arquivo, depois salva e fecha o bloco de notas.
 
