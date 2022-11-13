@@ -5,7 +5,9 @@ Veja o vídeo: [no Youtube](https://pages.github.com/)
 
 ### Função: abre o bloco de notas do windows, solicita do usuário o texto e o nome do arquivo, depois salva e fecha o bloco de notas.
 
-Este é um script Python de automação que utiliza as biblioteca PyAutoGUI e PyPerClip. A biblioteca PyPerClip foi uma solução encontrada para lidar com caracteres especiais, algo que o PyAutoGUI não aceita. Assim o texto digitado pelo usuário, via prompt(), é copiado para a área de transferência do windows com uso do método pyperclip.copy() e, posterirmente, colado no bloco de notas.
+Este é um script Python de automação que utiliza a biblioteca PyAutoGUI e o módulo PyPerClip. 
+
+O módulo PyPerClip foi uma solução encontrada para lidar com caracteres especiais, algo que o PyAutoGUI não aceita.
 
 > É um script simples, mas que serve como paradigma para automatizar uma infinidade de tarefas cotidianas semelhantes.
 
@@ -16,30 +18,30 @@ import time
 
 pyautogui.PAUSE = 1
 
-# abrir o bloco de notas
+# abre o bloco de notas
 pyautogui.press('win')
 pyautogui.write('bloco de notas')
 pyautogui.press('enter')
 time.sleep(1)
 
-# copia o texto com caracteres especiais para a área de trabalho
+# solicita o texto do usuário e o copia para a área de trabalho
 pyperclip.copy(pyautogui.prompt())
 
-# cola o texto acima ao invés de digitá-lo
+# cola o texto acima no bloco de notas
 pyautogui.hotkey("ctrl", "v")
 
-# salvar
+# inicia o salvamento do arquivo
 pyautogui.hotkey("ctrl", "s")
 
-# informe o nome do arquivo
+# solicita do usuário o nome do arquivo
 pyperclip.copy(pyautogui.prompt())
 pyautogui.hotkey("ctrl", "v")
 
-# clicar no botão salvar
+# clica no botão salvar
 pyautogui.press(['tab','tab','tab','tab'])
 pyautogui.press('enter')
 
-
+# fecha o bloco de notas
 time.sleep(1)
 pyautogui.keyDown('alt')
 pyautogui.press(['f4'])
